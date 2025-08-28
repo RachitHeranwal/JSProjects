@@ -10,18 +10,40 @@
 
 <body>
   <div class="container">
-    <h1>To-Do List</h1>
+    <div class="header">
+      <h1>To-Do List</h1>
+      <div class="theme-toggle">
+        <input type="checkbox" id="theme-switch" />
+        <label for="theme-switch" class="toggle-slider"></label>
+      </div>
+    </div>
     <div class="input-container">
       <input type="text" id="todo-input" placeholder="Add a new task..." />
       <button id="add-task-btn">Add Task</button>
     </div>
-    <ul id="todo-list">
-      <li>test
-        <button>Delete</button>
-      </li>
-    </ul>
+    
+    <ul id="todo-list"></ul>
+    
+    <!-- Pomodoro Timer Section -->
+    <div class="pomodoro-container">
+      <h2>Pomodoro Timer</h2>
+      <div class="timer-display">
+        <div class="timer-circle">
+          <span id="timer-minutes">25</span>:<span id="timer-seconds">00</span>
+        </div>
+        <div class="phase-info">
+          <span id="current-phase">Work Session</span>
+          <span id="cycle-count">Cycle 1 of 4</span>
+        </div>
+      </div>
+      <div class="timer-controls">
+        <button id="start-timer">Start</button>
+        <button id="pause-timer">Pause</button>
+        <button id="reset-timer">Reset</button>
+      </div>
+    </div>
   </div>
-  <script src="script.js"></script>
+  <script src="cript.js"></script>
 </body>
 
 </html>
