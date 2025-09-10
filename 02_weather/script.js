@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const descriptionDisplay = document.getElementById('description');
   const errorMessage = document.getElementById('error-message');
 
-  const API_KEY = "4efa26c3dcafff95cc8484376a5d953f";
 
   async function handleWeatherRequest() {
     const city = cityInput.value.trim();
